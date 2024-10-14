@@ -37,3 +37,16 @@ button:hover {
 button:active {
   opacity: .4;
 }
+
+fieldset {
+  border: 1px dashed #aaa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+legend {
+  padding: 0 8px;
+}
