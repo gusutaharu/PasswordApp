@@ -11,7 +11,12 @@
   btn.addEventListener('click', ()=>{
     const result = document.getElementById('result');
     const letters = 'abcdefghijklmnopqrstuvwxyz'; 
+    let password = '';
+    const seed = letters + letters.toUpperCase();
 
-    result.textContent = letters[Math.floor(Math.random()*26)];
+    for (let i = 0; i < slider.value; i++){
+      password += seed[Math.floor(Math.random()*52)];
+    }
+    result.textContent = password;
   });
 }
