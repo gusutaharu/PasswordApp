@@ -10,7 +10,8 @@
   });
   btn.addEventListener('click', ()=>{
     const result = document.getElementById('result');
+    const letters = 'abcdefghijklmnopqrstuvwxyz'; 
 
-    result.textContent = 'clicked!';
+    result.textContent = letters[Math.floor(Math.random()*26)];
   });
 }
